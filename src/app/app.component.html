@@ -1,0 +1,137 @@
+<!-- <p class="fcolor">Hello {{title}}</p>
+<style>
+    .fcolor {
+        color: blue;
+    }
+</style>
+<app-demo></app-demo> -->
+<!-- <app-student-data></app-student-data>
+<button (click)="show();">Click </button>
+
+<br><br>
+
+<input type="text" placeholder="Enter name" #nm > &nbsp;
+<button (click)="display(nm.value)">Click Me</button>
+<p>Name : {{print}}</p> -->
+
+<!-- <button (click)="counter('add')"> ++ </button>
+&nbsp;
+<button (click)="counter('sub')"> -- </button>
+<p>{{count}}</p> -->
+<!-- 
+
+<input type="text" name="firstname" value={{name}} disabled={{dis}}>
+<br><br>
+<input type="text" name="lastname" [value]=name [disabled]=dis> -->
+
+
+<!-- <input type="text" #num (keyup)="printData(num.value)"> -->
+
+<!-- <br><br> -->
+
+<!-- <input type="text" name="username" id="input" value="{{nm}}">
+<button id="setData" (click)="getData()">Click Me</button>  -->
+
+<!-- 
+<script>
+    $("#setData").click(function () {
+        $('#input').val("Masum");
+    });
+</script>  -->
+
+<!-- <h1 *ngIf="setText==='ok'; then ifCondition else elseCondition"></h1>
+
+<ng-template #ifCondition><h1> If condition</h1></ng-template>
+<ng-template #elseCondition><h1>Else condition</h1></ng-template> -->
+
+<!-- 
+<ng-template [ngIf]="color=='blue'">
+    <h3 style="color: blue;">Hello</h3>
+</ng-template>
+<ng-template [ngIf]="color=='red'">
+    <h3 style="color: red">Hello</h3>
+</ng-template>
+ -->
+
+<!-- <div [ngSwitch]="color">
+    <p *ngSwitchCase="'red'" style="color: red;">color</p>
+    <p *ngSwitchCase="'blue'" style="color: blue;">color</p>
+    <p *ngSwitchCase="'green'" style="color: green;">color</p>
+    <p *ngSwitchDefault>unknown color</p>
+
+</div> -->
+
+<!-- <h1 *ngFor="let i of data">{{i}}</h1> -->
+
+<!-- <h1 *ngFor="let i of studentDetails">{{i.id}} - {{i.uname}}</h1> -->
+
+<!-- <ul *ngFor="let i of studentDetails">
+    <li>
+        {{i.id}}
+    </li>
+    <li>
+        {{i.uname}}
+    </li>
+    <ul *ngFor="let sub of i.subject">
+        <li>{{sub}}</li>
+    </ul>
+</ul> -->
+<!-- 
+<h1 [style.color]="color" [style.backgroundColor]="bgcolor">{{title}}</h1>
+<button (click)="changeColor()">Click</button> -->
+
+<!-- ------------------------------------------------------------ -->
+
+<!-- <app-header></app-header> -->
+<!-- <app-form></app-form> -->
+
+<!-- 
+<br>
+<button (click)="toggle()">Click to see Toggle</button>
+<h1 *ngIf="displayToggle" ng>Toggle effect</h1> -->
+
+<!-- <p>
+	<ngb-alert [dismissible]="false">
+		<strong>Warning!</strong> Better check yourself, you're not looking too good.
+	</ngb-alert>
+</p> -->
+
+<!-- ------------------------------------------------------------ -->
+
+<!-- <app-child [num]="showNumber"></app-child>
+<br>
+<button (click)="updateNumber()">Update Number</button> -->
+
+
+<!-- ------------------------------------------------------------ -->
+
+<p>Data</p>
+<p>Today's date is : {{today|date}}</p>
+<p>Today's date is : {{today|date:"shortTime"}}</p>
+<p>Today's date is : {{today|date:'M/d/yy, h:mm a'}}</p>
+<p>Today's date is : {{today|date:'EEE, MMMM d, YYYY, h:mm:s a zzzz'}}</p>
+<p>Today's date is : {{today|date:'EEEE, LLLL d, YYYY, h:mm:s a zzzz'}}</p>
+<p>Today's date is : {{today|date:'w, llll d, YYYY, h:mm:s a zzzz'}}</p>
+<p>Today's date is : {{today|date:'w'}}</p>
+<p>Today's date is : {{today|date:'w, MMMM d, Y'}}</p>
+<p>Today's date is : {{today|date:'W, MMMM d, Y'}}</p>
+<!-- <p>Today's date is : {{today|date:'yyYY'}}</p> -->
+<!-- <p>Today's date is : {{today|date:'M/d/yy, h:mm a'}}</p>
+<p>Today's date is : {{today|date:'M/d/yy, h:mm a'}}</p> -->
+<p>Today's date is : {{today|date:'cccc, LLLL d, YYYY, h:mm:s a zzzz'}}</p>
+<p>{{today | date:'EEEEEE,MMMMM,d, yy'}}</p>
+
+<br>
+<p>String is : {{str|slice:0:1|uppercase}}{{str|slice:1}}</p>
+<p>String is : {{str|slice:0:6}}{{str|slice:6:7|uppercase}}{{str|slice:7}}</p>
+
+<h1> The reverse of string is {{ "Hello World" | reverse}}</h1>
+
+<p>B: {{b | currency:'CAD':'symbol':'4.2-4'}}</p>
+<p>{{200.3219716|number:'2.1-5'}}</p>
+<p>{{200.3219999|number:'2.1-5'}}</p>
+<p>{{200.3218888|number:'2.1-5'}}</p>
+<p>{{3.14|number:'4.5-5'}}</p>xx
+
+<!-- ------------------------------------------------------------ -->
+<!-- By default, the format is "MMM d, y" (Jan 5, 2016). -->
